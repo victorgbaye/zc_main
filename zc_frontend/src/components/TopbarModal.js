@@ -1,4 +1,5 @@
 import React, { useContext, useState } from 'react'
+import {Link} from 'react-router-dom'
 
 // react icons
 import { FaChevronRight, FaTimes, FaCircle } from 'react-icons/fa'
@@ -114,7 +115,9 @@ const TopbarModal = () => {
           <hr />
 
           <div className={styles.sectionFive}>
+            <Link to="/signout">
             <p>Sign out of Team Einstein workspace</p>
+            </Link>
           </div>
         </section>
       ) : null}

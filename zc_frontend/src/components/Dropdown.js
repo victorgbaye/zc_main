@@ -35,7 +35,7 @@ const Dropdown = ({ children, title, opened, showAddButton, onTitleClick }) => {
               </li>
             )
           })}
-      </ul>
+      </ul> 
     </div>
   )
 }

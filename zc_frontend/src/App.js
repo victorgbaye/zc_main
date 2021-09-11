@@ -27,7 +27,7 @@ import Cookies from './pages/cookies'
 import DeactivateAccount from './pages/settings/components/AcctDeactivation'
 import CookiesSetting from './pages/cookies-settings'
 import SearchResults2 from './components/externalPagesComponents/searchResults2'
-
+import SignOut from './pages/SignOut/SignOut'
 const App = () => (
   <BrowserRouter>
     <Switch>
@@ -102,6 +102,9 @@ const App = () => (
       </Route>
       <Route path="/search-suggestions">
         <SearchSuggestion />
+      </Route>
+      <Route path="/signout">
+        <SignOut />
       </Route>
       <Route path="/link">
         <LinkComponent

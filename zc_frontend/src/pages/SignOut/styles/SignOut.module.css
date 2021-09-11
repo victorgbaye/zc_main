@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: white;
+}
+.signout_container{
+    height: 100vh;
+    padding-top: 25%;
+    margin-bottom: auto;
+    background: white;
+
+}
+
+.signout_logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32.23px;
+
+}
+.logotext{
+    font-family: 'Lato', sans-serif;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 31px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+.h1{
+    font-family: 'Lato', sans-serif;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+.subh1{
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 7px;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+.signout_btn{
+    font-family: 'Lato', sans-serif;
+    border: none;
+    display: flex;
+    justify-content: center;
+    width: 179px;
+    padding: 10px 57px;
+    background: #2F80ED;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 33px;
+    border-radius: 3px;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+
+
+} 
+.p2{
+    font-family: 'Lato', sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 8px;
+
+}
+.p2 span{
+    color: #2F80ED;
+}
+.signout_content_container{
+    margin-left: auto;
+    margin-right: auto;
+    height: 162px;
+    width: 374px;
+    left: 20px;
+    top: 380px;
+    border: 1px solid #E5E5E5;
+    background: white;
+    border-radius: 3px;
+
+}
+@media(min-width: 900px){
+    .signout_container{
+        height: 100vh;
+        padding-top: 0;
+        background: #f6f6f6;
+    
+    }
+    .signout_logo{
+        margin-top: 20px;
+        margin-bottom: 101.23px;
+    
+    }
+    .signout_content_container{
+        margin-left: auto;
+        margin-right: auto;
+        /* left: 20px;
+        top: 380px; */
+        border: 1px solid #E5E5E5;
+        background: white;
+        height: 266px;
+        width: 676px;
+        left: 382px;
+        top: 152px;
+        border-radius: 3px;
+
+    
+    }
+    .h1{
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 30px;
+    letter-spacing: 0em;
+    margin-top: 48px;
+    margin-bottom: 16px;
+
+    }
+    .subh1{
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    margin-bottom: 36px;
+
+    }
+    .p2{
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0px;
+    margin-bottom: 16px;
+
+    }
+    .signout_btn{
+        width: 467px;
+        padding: 14px 201px;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 24px;
+
+    }
+}
