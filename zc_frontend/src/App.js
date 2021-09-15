@@ -133,98 +133,98 @@ const App = () => (
           <SearchSuggestion />
         </Route>
 
-      <Route path="/verify-email">
-        <EmailVerification />
-      </Route>
-      <Route path="/features">
-        <Features />
-      </Route>
-      <Route path="/pricing">
-        <Pricing />
-      </Route>
-      <Route path="/security">
-        <Security />
-      </Route>
-      <Route path="/careers">
-        <Careers />
-      </Route>
-      <Route path="/apps-integrations">
-        <AppsAndIntegrations />
-      </Route>
-      <Route path="/resources">
-        <Resources />
-      </Route>
-      <Route path="/download-app">
-        <Download />
-      </Route>
-      <Route path="/contact-us">
-        <ContactUs />
-      </Route>
-      <Route path="/pricing">
-        <Pricing />
-      </Route>
-      <Route path="/header">
-        <Header />
-      </Route>
-      <Route path="/marketplace" exact>
-        <MarketPlace />
-      </Route>
-      <Route path="/faq">
-        <FAQ />
-      </Route>
-      <Route path="/input">
-        <Input />
-      </Route>
-      <Route path="/settings" exact>
-        <Settings />
-      </Route>
-      <Route path="/settings/:id">
-        <ConfirmPassword />
-      </Route>
-      <Route path="/search">
-        <SearchResult />
-      </Route>
-      <Route path="/cookies-banner">
-        <Cookies />
-      </Route>
-      <Route path="/cookies-settings">
-        <CookiesSetting />
-      </Route>
-      <Route path="/deactivate-account">
-        <DeactivateAccount />
-      </Route>
-      <Route path="/session-signout">
-        <AllSessionSignOut />
-      </Route>
-      <Route path="/search-results">
-        <SearchResults2 />
-      </Route>
-      <Route path="/search-suggestions">
-        <SearchSuggestion />
-      </Route>
-      <Route path="/signout">
-        <SignOut />
-      </Route>
-      <Route path="/link">
-        <LinkComponent
-          title={`test-to-home`}
-          to={`/home`}
-          color={`black`}
-          underline
-        />
-      </Route>
-      <Route path="searchSuggestion">
-        <SearchSuggestion />
-      </Route>
-      <Route path="/documentation" exact>
-        <ApiDocs />
-      </Route>
-      <Route path="/confirm-deactivation">
-        <ConfirmDeactivation />
-      </Route>
-      <Route path="/account-deactivated">
-        <AccDeactivated />
-      </Route>
+        <Route path="/verify-email">
+          <EmailVerification />
+        </Route>
+        <Route path="/features">
+          <Features />
+        </Route>
+        <Route path="/pricing">
+          <Pricing />
+        </Route>
+        <Route path="/security">
+          <Security />
+        </Route>
+        <Route path="/careers">
+          <Careers />
+        </Route>
+        <Route path="/apps-integrations">
+          <AppsAndIntegrations />
+        </Route>
+        <Route path="/resources">
+          <Resources />
+        </Route>
+        <Route path="/download-app">
+          <Download />
+        </Route>
+        <Route path="/contact-us">
+          <ContactUs />
+        </Route>
+        <Route path="/pricing">
+          <Pricing />
+        </Route>
+        <Route path="/header">
+          <Header />
+        </Route>
+        <Route path="/marketplace" exact>
+          <MarketPlace />
+        </Route>
+        <Route path="/faq">
+          <FAQ />
+        </Route>
+        <Route path="/input">
+          <Input />
+        </Route>
+        <Route path="/settings" exact>
+          <Settings />
+        </Route>
+        <Route path="/settings/:id">
+          <ConfirmPassword />
+        </Route>
+        <Route path="/search">
+          <SearchResult />
+        </Route>
+        <Route path="/cookies-banner">
+          <Cookies />
+        </Route>
+        <Route path="/cookies-settings">
+          <CookiesSetting />
+        </Route>
+        <Route path="/deactivate-account">
+          <DeactivateAccount />
+        </Route>
+        <Route path="/session-signout">
+          <AllSessionSignOut />
+        </Route>
+        <Route path="/search-results">
+          <SearchResults2 />
+        </Route>
+        <Route path="/search-suggestions">
+          <SearchSuggestion />
+        </Route>
+        <Route path="/signout">
+          <SignOut />
+        </Route>
+        <Route path="/link">
+          <LinkComponent
+            title={`test-to-home`}
+            to={`/home`}
+            color={`black`}
+            underline
+          />
+        </Route>
+        <Route path="searchSuggestion">
+          <SearchSuggestion />
+        </Route>
+        <Route path="/documentation" exact>
+          <ApiDocs />
+        </Route>
+        <Route path="/confirm-deactivation">
+          <ConfirmDeactivation />
+        </Route>
+        <Route path="/account-deactivated">
+          <AccDeactivated />
+        </Route>
 
         {/* Api docs */}
         <Route exact path="/documentation/users">
@@ -265,7 +265,7 @@ const App = () => (
           <AccDeactivated />
         </Route>
       </Switch>
-    </BrowserRouter> 
+    </BrowserRouter>
   </TopbarProvider>
 )
 export default App
