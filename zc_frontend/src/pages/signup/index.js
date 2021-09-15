@@ -14,22 +14,38 @@ const Signup = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
+  // const [confirmPassword, setConfirmPassword] = useState('')
   const [tos, setTos] = useState(false)
   // const { error, setError } = useState('')
 
   const handleSubmit = async e => {
     e.preventDefault()
+
+    //Seperate user fullname
+    const seperateName = name.split(' ')
+    let first_name = '',
+      other_name = ''
+
+    seperateName.map((name, index) => {
+      if (index === 0) {
+        return (first_name += name)
+      }
+      return (other_name += `${name} `)
+    })
+
     await axios
-      .post('/api/register', {
-        fullName: name,
+      .post('https://api.zuri.chat/users', {
+        first_name,
+        last_name: other_name,
         email,
         password
       })
       .then(response => {
         const { data, message } = response.data
+        console.log(response.data)
 
         //Store token in localstorage
-        localStorage.setItem('token', data.token)
+        sessionStorage.setItem('user_id', data.InsertedId)
 
         //Display message
         alert(message) //Change this when there is a design
@@ -39,12 +55,10 @@ const Signup = () => {
         }, 2000)
       })
       .catch(error => {
-        const { data, status } = error.response
+        const { data } = error.response
 
         //Render error message to the user
-        if (status === 400) alert(data)
-        //Change this when there is a design
-        else if (status === 409) alert(data.reason) //Change this when there is a design
+        alert(data.message) //Change this when there is a design
       })
   }
 
@@ -70,13 +84,14 @@ const Signup = () => {
           handleSubmit={handleSubmit}
           bottomLine="Already have an account?"
           bottomLink="Log in"
+          bottomLinkHref="login"
         >
           <AuthInputBox
             className={`${styles.inputElement}`}
             id="name"
             name="Full name"
             type="text"
-            placeholder="John Doe"
+            placeholder="Enter your Name"
             value={name}
             setValue={setName}
             // error={error}
@@ -86,7 +101,7 @@ const Signup = () => {
             id="email"
             name="Email address"
             type="email"
-            placeholder="johnDoe@example.com"
+            placeholder="Enter you email address"
             value={email}
             setValue={setEmail}
             // error={error}
@@ -96,7 +111,7 @@ const Signup = () => {
             id="password"
             name="Password"
             type="password"
-            placeholder="Enter your Password"
+            placeholder="Enter a password"
             value={password}
             setValue={setPassword}
             // error={error}
@@ -106,7 +121,7 @@ const Signup = () => {
             id="cpassword"
             name="Confirm password"
             type="password"
-            placeholder="Enter your password"
+            placeholder="Confirm password"
             value={confirmPassword}
             setValue={setConfirmPassword}
             // error={error}
