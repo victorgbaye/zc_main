@@ -1,6 +1,6 @@
 import { PluginContent } from '../../components/PluginContent'
 import { Sidebar } from '../../components/Sidebar'
-// import Topbar from '../../components/Topbar'
+import Topbar from '../../components/Topbar'
 import styles from '../../styles/Home.module.css'
 import { UrlProvider } from '../../context/Url'
 import { PluginProvider } from '../../context/Plugins'
@@ -21,6 +21,7 @@ const Home = () => {
             <ProfileProvider>
               <TopbarProvider>
                 <div className={styles.room}>
+                  <Topbar/>
                   <div className={styles.spaceWrapper}>
                     <div className={styles.pluginContent}>
                       <PluginContent />

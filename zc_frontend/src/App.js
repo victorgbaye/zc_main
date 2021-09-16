@@ -139,9 +139,9 @@ const App = () => (
           <SearchSuggestion />
         </Route>
 
-        <Route path="/verify-email">
+        {/* <Route path="/verify-email">
           <EmailVerification />
-        </Route>
+        </Route> */}
         <Route path="/features">
           <Features />
         </Route>
