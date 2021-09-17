@@ -15,6 +15,7 @@ import EditProfile from './EditProfile'
 import MembersModal from './MembersModal'
 import Downloads from './Downloads'
 import PauseNotification from './PauseNotification'
+import SetStatusModal from './SetStatusModal'
 
 const TopbarModal = ({ members }) => {
   const { toggleModalState, toggleProfileState } = useContext(ProfileContext)
@@ -98,6 +99,7 @@ const TopbarModal = ({ members }) => {
 
           <div className={styles.sectionThree}>
             <p onClick={openStatus}>Set a status</p>
+            <SetStatusModal/>
             <p onClick={() => setActive(!active)}>
               {active ? 'Set yourself as away' : 'Set yourself as active'}
             </p>
