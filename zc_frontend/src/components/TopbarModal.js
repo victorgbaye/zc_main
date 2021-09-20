@@ -30,6 +30,7 @@ const TopbarModal = ({ members }) => {
     state
   const [modal, setModal] = useState('')
   const [pause, setPause] = useState(false)
+  const [statusModal, setStatusModal] = useState(false)
 
   return (
     <>
@@ -97,10 +98,11 @@ const TopbarModal = ({ members }) => {
           {/* <div onClick={openStatus} className={styles.sectionTwo}>
             <StatusBadgeModal />
           </div> */}
+          {/* onClick={openStatus} */}
 
           <div className={styles.sectionThree}>
-            <p onClick={openStatus}>Set a status</p>
-            <SetStatusModal/>
+            <p onClick={()=> setStatusModal(!statusModal)}>Set a status</p>
+            {statusModal &&<SetStatusModal statusModal={statusModal} setStatusModal={setStatusModal} openStatus={openStatus}/>}
             <p onClick={() => setActive(!active)}>
               {active ? 'Set yourself as away' : 'Set yourself as active'}
             </p>
